@@ -1,3 +1,68 @@
-<h1>TopCheck!</h1>
-<h2>3</h2>
-<img src = "TopCheckIcon.jpg"></img>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TopCheck Support</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; margin: 0; }
+  .app-icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  .container { display: flex; flex-wrap: wrap; margin-top: 60px; }
+  .left, .right { flex: 1; min-width: 280px; padding: 10px; }
+  .app-link { display: block; margin-bottom: 20px; }
+  .app-link img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+  }
+  .app-link img:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Add a subtle shadow */
+  }
+  .right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom-links { text-align: center; margin-top: 20px; }
+  .bottom-links a { margin: 0 10px; }
+  @media (max-width: 600px) {
+    .container { flex-direction: column; }
+    .left, .right { min-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<img src="TopCheckIcon.jpg" alt="TopCheck Icon" class="app-icon">
+
+<div class="container">
+  <div class="left">
+    <h1>Welcome to TopCheck Support</h1>
+    <p>Find help and support for TopCheck, your ultimate app for [brief description of what the app does].</p>
+    <a href="https://apps.apple.com/app/id6478382090" class="app-link">
+      <img src="app-store.svg" alt="Download on the App Store">
+    </a>
+  </div>
+  <div class="right">
+    <img src="screenshot1.png" alt="TopCheck Screenshot" style="border-radius: 20px;">
+  </div>
+</div>
+
+<div class="bottom-links">
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="mailto:topcheck.app@gmail.com?subject=TopCheck Support">Contact Us</a>
+</div>
+
+</body>
+</html>
